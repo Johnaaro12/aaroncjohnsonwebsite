@@ -16,7 +16,7 @@
 const ABOUT_ME = [
   {
     heading: "Who am I",
-    text: "I'm a ServiceNow Technical Architect based in Minneapolis with over a decade of experience designing and building enterprise solutions. I got my start taking apart old computers and radios as a kid, taught myself to code as a teenager, and found my way into the ServiceNow ecosystem where I've been ever since. I've worked across every major module — from ITSM fundamentals to complex integrations and custom application development.",
+    text: "I'm a Senior ServiceNow Developer based in Saint Paul, Minnesota. I started my career in the ITSM space working on BMC Remedy ITSM and Kinetic Request before stepping into ServiceNow development. I've grown through every layer of the development process, serving as a Business Analyst, System Admin, and Developer before stepping into an Architect role. I hold a B.S. in Information Systems from the University of Wisconsin - La Crosse.",
   }
 ];
 
