@@ -9,7 +9,7 @@
    ═══════════════════════════════════════════ */
 
 const SKILLS_INDEX = [
-  {
+{
     title: "Platform Administration",
     description: "Instance configuration, upgrades, performance tuning, and security hardening.",
     file: "platform-administration.md",
@@ -20,43 +20,88 @@ const SKILLS_INDEX = [
     file: "scripting-development.md",
   },
   {
-    title: "Flow Designer",
-    description: "Modern workflow automation with flows, subflows, and custom actions.",
-    file: "flow-designer.md",
+    title: "AI Skill Kit",
+    description: "Building and managing reusable skill-based components for agent and workflow automation.",
+    file: "skill-kit.md",
   },
   {
-    title: "Service Portal",
-    description: "Custom portal development with Angular widgets and responsive design.",
-    file: "service-portal.md",
+    title: "AI Agents",
+    description: "Designing, configuring, and deploying autonomous AI Agents for multi-step task resolution.",
+    file: "ai-agents.md",
   },
   {
-    title: "ITSM",
-    description: "Incident, Problem, Change, and Request management configuration.",
-    file: "itsm.md",
+    title: "Now Assist in Virtual Agent",
+    description: "Integrating generative AI into Virtual Agent conversations for intelligent self-service.",
+    file: "now-assist-virtual-agent.md",
   },
   {
-    title: "REST & SOAP APIs",
-    description: "Inbound/outbound integrations, scripted REST APIs, and mid server config.",
-    file: "rest-soap-apis.md",
+    title: "Now Assist Search",
+    description: "Configuring AI-powered search experiences for knowledge discovery and contextual results.",
+    file: "now-assist-search.md",
   },
   {
-    title: "CMDB & Discovery",
-    description: "CMDB architecture, CI class design, Discovery patterns, and health scoring.",
-    file: "cmdb-discovery.md",
+    title: "Integrations",
+    description: "REST/SOAP APIs, Integration Hub, MID Server, and third-party system connectivity.",
+    file: "integrations.md",
+  },
+  {
+    title: "IT Service Management",
+    description: "Incident, Problem, Change, Request, and SLA management configuration and optimization.",
+    file: "it-service-management.md",
   },
   {
     title: "HRSD",
-    description: "HR Service Delivery — lifecycle events, case management, and employee portals.",
+    description: "Employee Relations, Lifecycle Events, and HR Case Management configuration and delivery.",
     file: "hrsd.md",
   },
   {
-    title: "Automated Testing (ATF)",
-    description: "Test framework design, parameterized tests, and CI/CD pipeline integration.",
-    file: "automated-testing.md",
+    title: "Employee Center Pro",
+    description: "Building unified employee portals with personalized content, topics, and service catalogs.",
+    file: "employee-center-pro.md",
   },
   {
-    title: "Security Operations",
-    description: "SecOps module configuration with SIEM and endpoint integrations.",
-    file: "security-operations.md",
+    title: "Test Management",
+    description: "Planning, executing, and tracking test cases and test suites within ServiceNow.",
+    file: "test-management.md",
+  },
+  {
+    title: "SPM",
+    description: "Demand Management, Project Management, and Portfolio optimization for strategic planning.",
+    file: "spm.md",
+  },
+  {
+    title: "Upgrade & Clone",
+    description: "Managing instance upgrades, cloning environments, and handling skipped records and conflicts.",
+    file: "upgrade-clone.md",
+  },
+  {
+    title: "Advanced Work Assignment",
+    description: "Configuring skill-based routing, capacity management, and intelligent task assignment.",
+    file: "advanced-work-assignment.md",
+  },
+  {
+    title: "Workspace",
+    description: "Building and customizing Configurable Workspaces and Next Experience UI for agents.",
+    file: "workspace.md",
+  },
+  {
+    title: "Automated Test Framework",
+    description: "Creating and running automated tests for platform configurations, scripts, and upgrades.",
+    file: "automated-test-framework.md",
+  },
+  {
+    title: "Flow Designer",
+    description: "Building low-code workflow automations with actions, subflows, and triggers.",
+    file: "flow-designer.md",
+  },
+  {
+    title: "Custom App Development",
+    description: "Scoped application design and development for business-specific solutions.",
+    file: "custom-app-development.md",
+  },
+  {
+    title: "Agile Development",
+    description: "Agile 2.0 with scrum, kanban, sprint planning, and backlog management within ServiceNow.",
+    file: "agile-development.md",
   },
 ];

@@ -16,8 +16,8 @@
 const ABOUT_ME = [
   {
     heading: "Who am I",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat sem ut dignissim mattis. Donec mollis arcu ac nisl accumsan, nec pulvinar est pulvinar. Aliquam quis metus ac nulla tincidunt porta. Duis nec interdum quam, sit amet vulputate lacus. Etiam sit amet est libero. Aenean lacus lorem, pellentesque in sodales quis, dapibus at arcu.",
-  },
+    text: "I'm a ServiceNow Technical Architect based in Minneapolis with over a decade of experience designing and building enterprise solutions. I got my start taking apart old computers and radios as a kid, taught myself to code as a teenager, and found my way into the ServiceNow ecosystem where I've been ever since. I've worked across every major module — from ITSM fundamentals to complex integrations and custom application development.",
+  }
 ];
 
 // ─── HOME PAGE DATA ───
@@ -27,11 +27,11 @@ const HOME_BLURB = "I'm a ServiceNow Technical Architect with over a decade of e
 const HOME_SECTIONS = [
   {
     heading: "Background",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat sem ut dignissim mattis. Donec mollis arcu ac nisl accumsan, nec pulvinar est pulvinar. Aliquam quis metus ac nulla tincidunt porta. Duis nec interdum quam, sit amet vulputate lacus. Etiam sit amet est libero. Aenean lacus lorem, pellentesque in sodales quis, dapibus at arcu.",
+    text: "I'm a Senior ServiceNow Developer based in Saint Paul, Minnesota. I started my career in the ITSM space working on BMC Remedy ITSM and Kinetic Request before stepping into ServiceNow development. I've grown through every layer of the development process, serving as a Business Analyst, System Admin, and Developer before stepping into an Architect role. I hold a B.S. in Information Systems from the University of Wisconsin - La Crosse.",
   },
   {
     heading: "What I Do",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat sem ut dignissim mattis. Donec mollis arcu ac nisl accumsan, nec pulvinar est pulvinar. Aliquam quis metus ac nulla tincidunt porta. Duis nec interdum quam, sit amet vulputate lacus. Etiam sit amet est libero. Aenean lacus lorem, pellentesque in sodales quis, dapibus at arcu.",
+    text: "At Intermountain Health, my biggest project has been rebuilding the entire ServiceNow platform during the merger of two health systems into a single instance, spanning ITSM, HRSD, SPM, and Agile Development modules. I design end-to-end workflows like the onboarding process I built using Lifecycle Events. I also create custom solutions when off-the-shelf doesn't cut it, whether that's a timekeeping app to replace Kronos during downtime or COVID compliance modules during the pandemic. Right now, I'm leading Virtual Agent development, working on AI-powered enhancements to improve automated support. Across everything I do, the thread is the same: automate what can be automated, simplify what's complex, and make the platform work harder for the people using it.",
   },
   {
     heading: "Certifications",
@@ -240,8 +240,31 @@ function initNavigation() {
   });
 }
 
+// ─── Theme Toggle ───
+function initThemeToggle() {
+  const toggle = document.getElementById("theme-toggle");
+  const saved = localStorage.getItem("theme");
+
+  // Apply saved theme or default to light
+  if (saved === "dark") {
+    document.documentElement.setAttribute("data-theme", "dark");
+  }
+
+  toggle.addEventListener("click", () => {
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    if (isDark) {
+      document.documentElement.removeAttribute("data-theme");
+      localStorage.setItem("theme", "light");
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    }
+  });
+}
+
 // ─── Initialize ───
 document.addEventListener("DOMContentLoaded", () => {
+  initThemeToggle();
   renderHome();
   renderCardGrid("projects-content", PROJECTS_INDEX, projectPage, "projects");
   renderCardGrid("skills-content", SKILLS_INDEX, skillPage, "skills");

@@ -31,4 +31,14 @@ const NOTES_INDEX = [
     description: "How we manage update sets, naming conventions, and promotion workflows.",
     file: "update-set-strategy.md",
   },
+    {
+    title: "Important ServiceNow Scripts & Tables",
+    description: "ServiceNow tables that are useful to know.",
+    file: "sn-tables.md",
+  },
+  {
+    title: "ServiceNow AI - Complete Reference",
+    description: "AI fundamentals, Now Assist, AI Agents, Skill Kit, NLU vs LLM, and the full ServiceNow AI stack.",
+    file: "servicenow-ai-basics.md",
+  },
 ];
